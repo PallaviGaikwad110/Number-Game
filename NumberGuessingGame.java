@@ -8,7 +8,7 @@ public class NumberGuessingGame {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        // Generate a random number between 1 and 100
+        
         int numberToGuess = random.nextInt(100) + 1;
         int guess = 0;
         int attempts = 0;
@@ -17,7 +17,7 @@ public class NumberGuessingGame {
         System.out.println("I have chosen a number between 1 and 100.");
         System.out.println("Try to guess it!");
 
-        // Loop until the user guesses the number
+        
         while (guess != numberToGuess) {
             System.out.print("Enter your guess: ");
             guess = scanner.nextInt();
@@ -36,5 +36,6 @@ public class NumberGuessingGame {
         scanner.close();
     }
 }
+
 
 
